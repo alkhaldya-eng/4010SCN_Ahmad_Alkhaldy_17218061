@@ -1,49 +1,61 @@
-# AP3 – C.A.L.S Credit Sorter
+AP3 – C.A.L.S Credit Sorter
 
-**Student:** Ahmad Alkhaldy  
-**Student ID:** 17218061  
-**Module:** 4010SCN – Software Engineering
+Student: Ahmad Alkhaldy
 
-## Project overview
+Student ID: 17218061
 
-AP3 adds credit history features to the C.A.L.S system. The program generates simulated credit values, counts how often a value appears, sorts the history in both directions and calculates basic statistics.
+Module: 4010SCN – Software Engineering
 
-## Functions
+Project overview
 
-- `GenerateCredits()` returns a `vector<int>` containing 20 randomly generated values from 0 to 100 (inclusive).
-- `FoundAmount(int amount, vector<int> credits)` returns the number of occurrences of `amount` in the vector, or 0 if it does not appear.
-- `SortCredits(bool ascend, vector<int> unsorted)` returns a sorted copy. `true` gives ascending order; `false` gives descending order.
+The AP3 programme adds the credit history functionality to the C.A.L.S system. It will generate the credit values, count how many times each value carries on, sort the history in both ascending and descending order and calculate the min, max, average and median. It's been made to function with a 20 numbers between 0 and 100.
 
-The program also includes helper functions for displaying credit values and printing the lowest value, highest value, average and median. The median calculation works for both odd and even vector sizes.
+Functions
 
-## How to compile and run
+- GenerateCredits() returns a vector of int with 20 randomly generated values. Each value is between 0 and 100 inclusive. The values are going to be the same every time the program is run because a fixed seed is being used.
 
-Open the terminal at the root of the coursework repository and run:
+- FoundAmount(int amount, vector<int> credits) 
+
+It takes a number and calculates how many times it appears on the credits list; if the number is not  in the list then 0 is returned.
+
+- SortCredits(bool ascend, vector<int> credits) sorts the credits. If ascend is true it's a sort from smallest to largest. If false it's a sort from largest to smallest. The original list is left unaltered as the function operates on a copy of the list.
+
+The program also has a number of helper functions to display the credit values and to print out the min, max, the average and the median. The median function will work for both odd and even length lists.
+
+How to compile and run
+
+Open your terminal. CD into the root of your coursework repo. Run the next commands coming up:
 
 ```bash
 g++ -std=c++17 -Wall -Wextra -pedantic AP3/main.cpp -o ap3_program
+
 ./ap3_program
 ```
 
-The generated numbers change between runs, so the sorting results and statistics will also change.
+Each time you run it the generated numbers will be the same, so the sorting results and the statistics will also be the same.
 
-## Testing plan
+Testing plan
 
-Before submission, run the program and record the observed results. Check the following:
+Run the AP3 program prior to submission and note what you see. Check the following:
 
-1. `GenerateCredits()` produces at least 20 values, all between 0 and 100.
-2. `FoundAmount()` counts duplicates: the built-in example checks that 10 occurs three times.
-3. `FoundAmount()` returns 0 for a missing value: the example searches for 99.
-4. `SortCredits(true, ...)` prints values from smallest to largest.
-5. `SortCredits(false, ...)` prints values from largest to smallest.
-6. The minimum, maximum, average and median match the generated values.
+GenerateCredits() returns 20 numbers. All numbers should be between 0 and 100.
 
-**Evidence:** Add your own screenshot and screen-recording link here after running the program on your Mac.
+2. FoundAmount() does the job of counting duplicates. The example is looking for the first generated number, which is 51. It should appear once.
 
-## Sorting approach
+3. FoundAmount() returns 0 if the number isn't in the list. The example is looking for 101 which isn't in the generated range.
 
-I used `std::sort` to put the numbers in ascending order. When descending order is requested, the function reverses the sorted copy. This keeps the original generated credit history unchanged. Comments in the code explain the steps.
+4. SortCredits(true, …) prints the numbers from smallest to largest.
 
-## AI usage
+5. SortCredits(false, …) prints the numbers from largest to smallest.
 
-ChatGPT assisted with writing and explaining the C++ implementation, preparing this README and planning tests. I will review and test the program before submitting it.
+6. The min, max, mean and median all match the figures in the list.
+
+Evidence: After running the program, on your Mac add a screenshot named Evidence.png.
+
+Sorting approach
+
+I used the std::sort to sort the numbers in ascending order. For descending order I used std::sort with greater<int>() to sort the numbers from largest to smallest.
+
+AI usage
+
+I used ChatGPT to support my understanding of the AP3 tasks, assist with writing the code and README, and help me solve and fix errors.
