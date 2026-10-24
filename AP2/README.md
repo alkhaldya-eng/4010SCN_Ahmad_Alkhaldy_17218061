@@ -120,6 +120,29 @@ I recorded a video showing the program compiling and working in the terminal.
 https://livecoventryac-my.sharepoint.com/:v:/g/personal/alkhaldya_uni_coventry_ac_uk/IQAAKEiDO8H-S78x1JVJiBQQAVGwSVRBEUOdNq-PHsHOlbA?email=ringt%40uni.coventry.ac.uk&e=mGDvVz&xsdata=MDV8MDJ8YWxraGFsZHlhQHVuaS5jb3ZlbnRyeS5hYy51a3wyNTQzMmMzM2IzNzk0NzI4NjlkZTA4ZGYzMWE5NDIxMXw0YjE4YWI5YTM3NjU0YWJlYWM3YzBlMGQzOThhZmQ0ZnwwfDB8NjM5Mjg0Mjc1MTg0MzEyNzAwfFVua25vd258VFdGcGJHWnNiM2Q4ZXlKRmJYQjBlVTFoY0draU9uUnlkV1VzSWxZaU9pSXdMakF1TURBd01DSXNJbEFpT2lKWGFXNHpNaUlzSWtGT0lqb2lUV0ZwYkNJc0lsZFVJam95ZlE9PXwwfHx8&sdata=Ui9ZaTlzb1M5cEhadXhCTzhMZXEzZUY1aFZKeFhqSkFqdnROY0liZDdIOD0%3d
 
 The video shows converting points checking Gold membership and ending the program.
+Test 4 – Negative Points
+
+Input: -5 points  
+Expected result: 0 credits  
+Actual result: 0 credits  
+Status: Passed
+
+I entered -5 points to check how the program handles negative numbers. It returned 0 credits as expected.
+
+Test 5 – Invalid Menu Option
+
+Input: 9  
+Expected result: The menu appears again.  
+Actual result: The menu appeared again.  
+Status: Passed
+
+I entered 9 to check what happens when the user selects an option that isn't available. The program showed the menu again.
+
+Additional Evidence
+
+I made a second screen recording showing the negative points test and the invalid menu option.
+
+Video link: https://livecoventryac-my.sharepoint.com/:v:/g/personal/alkhaldya_uni_coventry_ac_uk/IQBF1IROT9n6QZ2PXHp6OhlhAcyjWMkBCNwQbOR8aIxuNfY?email=ringt%40uni.coventry.ac.uk&e=RfOlQi&xsdata=MDV8MDJ8YWxraGFsZHlhQHVuaS5jb3ZlbnRyeS5hYy51a3wwNmEyZmRiNWE5OWE0ODUzNzRhMDA4ZGYzMWFlNjliZnw0YjE4YWI5YTM3NjU0YWJlYWM3YzBlMGQzOThhZmQ0ZnwwfDB8NjM5Mjg0Mjk3MjkwODU1NjgxfFVua25vd258VFdGcGJHWnNiM2Q4ZXlKRmJYQjBlVTFoY0draU9uUnlkV1VzSWxZaU9pSXdMakF1TURBd01DSXNJbEFpT2lKWGFXNHpNaUlzSWtGT0lqb2lUV0ZwYkNJc0lsZFVJam95ZlE9PXwwfHx8&sdata=WklEOGJxT0hzekhVclEzSjlBLzJPeTAzOUVqUjZJeEoyaGlWS0U5VW9ITT0%3d
 
 AI Usage
 
