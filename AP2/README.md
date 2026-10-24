@@ -18,7 +18,7 @@ The feature turns user points into C.A.L.S credits.
 
 If the points are negative the C.A.L.S function returns 0.
 
-If the points are not negative the calculation is points multiplied by 2.4.5.
+The calculation is points multiplied by 2.4, then minus 5.
 
 The final number is returned as an integer.
 
@@ -28,7 +28,7 @@ This function checks if a user can receive a Gold membership.
 
 A user receives Gold membership if any of the following is true:
 
-- The user has than 100 credits.
+- The user is verified and has more than 100 credits.
 
 - The number of days the user has is greater than the user’s credits.
 
@@ -147,3 +147,8 @@ Video link: https://livecoventryac-my.sharepoint.com/:v:/g/personal/alkhaldya_un
 AI Usage
 
 ChatGPT aided me with ideas and explained the C++ code and fix Git issues.
+For AP2, I created the three C.A.L.S functions and tested them using the VS Code terminal.
+
+I tested converting points into credits, checking Gold membership, entering negative points and using an invalid menu option. The program gave the expected results for these tests.
+
+I also recorded my testing to show how the program works.
