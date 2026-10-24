@@ -1,0 +1,16 @@
+C.A.L.S Credit Sorter
+Generated credit history (20 values):
+8, 25, 22, 57, 34, 96, 82, 89, 20, 70, 8, 43, 12, 52, 4, 96, 77, 20, 79, 30
+
+Search example: 10 appears 3 times.
+Search example: 99 appears 0 times.
+
+Ascending credit history:
+4, 8, 8, 12, 20, 20, 22, 25, 30, 34, 43, 52, 57, 70, 77, 79, 82, 89, 96, 96
+Descending credit history:
+96, 96, 89, 82, 79, 77, 70, 57, 52, 43, 34, 30, 25, 22, 20, 20, 12, 8, 8, 4
+
+Credit history statistics:
+The lowest is 4, the highest is 96
+The average is 46.2
+The median is 38.5
