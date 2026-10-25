@@ -1,0 +1,22 @@
+C.A.L.S Employee System
+
+Staff IDs: 0, 1, 2, 3
+Employee monthly pay: 2000.00
+Admin monthly pay (15% bonus): 2875.00
+Assign Ahmad: true
+Assign Sara: true
+Assign Omar: true
+Duplicate Ahmad rejected: true
+Find Sara: true
+Find missing ID: true
+Manager monthly pay (3 reports): 5200.00
+Team monthly pay: 13075.00
+Remove Sara: true
+Remove Sara again rejected: true
+Team monthly pay after removal: 9675.00
+Salary unchanged after negative input: 24000.00
+Updated name: Ahmad Alkhaldy
+Higher annual salary: Omar
+Equal salary returns A: true
+Virtual manager pay: 4800.00
+Virtual admin pay: 2875.00
