@@ -1,0 +1,17 @@
+C.A.L.S Membership System
+
+Initial member details:
+Name: Ahmad , Age: 19 , ID: 0
+Name: Sara , Age: 22 , ID: 1
+Name: Omar , Age: 25 , ID: 2
+
+Credit balances after adding credits:
+Ahmad (regular): 100.00
+Sara (regular): 50.00
+Omar (gold, 1.4x): 140.00
+
+Updated member using setters:
+Name: Ahmad Alkhaldy , Age: 20 , ID: 0
+Getter check: Ahmad Alkhaldy, age 20
+
+Total memberships created: 3
